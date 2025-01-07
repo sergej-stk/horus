@@ -2,33 +2,28 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "clean",
+            "label": "build",
             "command": "dotnet",
-            "type": "shell",
+            "type": "process",
             "args": [
-                "clean",
-                "src/Horus.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "build",
+                "src/Horus/Horus.csproj"
             ],
-            "group": "build",
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "build",
+            "label": "publish",
             "command": "dotnet",
-            "type": "shell",
+            "type": "process",
             "args": [
-                "build",
-                "src/Horus.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "publish",
+                "src/Horus/Horus.csproj",
+                "--configuration",
+                "Release",
+                "--output",
+                "src/Horus/bin/Release/net7.0/publish"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": "$msCompile"
+            "problemMatcher": []
         }
     ]
 }

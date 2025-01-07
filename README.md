@@ -6,7 +6,7 @@
         target="_blank">
         <img 
             src="assets/logo.png" 
-            alt="Mein Bild" 
+            alt="Logo Horus" 
             width="200" 
             height="200">
         </img>

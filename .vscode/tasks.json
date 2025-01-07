@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "src/Horus/Horus.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "src/Horus/Horus.csproj",
+                "--configuration",
+                "Release",
+                "--output",
+                "src/Horus/bin/Release/net7.0/publish"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,2 +1,32 @@
-# horus
-Horus is a lightweight tool designed for managing tickets and employee data. Inspired by Horus, the Egyptian god of the sky and protector, this software focuses on streamlining workflows and enhancing organizational clarity.
+<br>
+
+<div align="center">
+    <a 
+        href="https://github.com/sergej-stk/horus"
+        target="_blank">
+        <img 
+            src="assets/logo.png" 
+            alt="Mein Bild" 
+            width="200" 
+            height="200">
+        </img>
+    </a>
+</div>
+
+<div align="center">
+    <a 
+      href="https://github.com/sergej-stk/horus/actions/workflows/build-test.yml"
+      target="_blank"
+      style="text-decoration:none;">
+        <img 
+            src="https://github.com/sergej-stk/horus/actions/workflows/build-test.yml/badge.svg" 
+            alt="Build & Test" />
+    </a>
+</div>
+
+<br>
+
+**Horus** is a lightweight tool designed for managing tickets and employee data. Inspired by Horus, the Egyptian god of the sky and protector.
+
+### Author
+- [sergej-stk](https://github.com/sergej-stk)

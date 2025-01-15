@@ -11,7 +11,7 @@
         <MudText Typo="Typo.h5" Class="ml-3">Horus</MudText>
         <MudSpacer />
         <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
-        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
+        <MudIconButton Icon="@(AccountButtonIcon)" Color="Color.Inherit" Edge="Edge.End" />
     </MudAppBar>
     <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
         <NavMenu />
@@ -31,6 +31,7 @@
 @code {
     private bool _drawerOpen = true;
     private bool _isDarkMode = true;
+    private bool _isUserLoggedIn = true;
     private MudTheme? _theme = null;
 
     protected override void OnInitialized()
@@ -97,7 +98,14 @@
 
     public string DarkLightModeButtonIcon => _isDarkMode switch
     {
-        true => Icons.Material.Rounded.AutoMode,
+        true => Icons.Material.Filled.WbSunny,
         false => Icons.Material.Outlined.DarkMode,
+    };
+
+    public string AccountButtonIcon => _isUserLoggedIn switch
+    {
+        //Todo User Profile Picture
+        true => Icons.Material.Filled.AccountCircle,
+        false => Icons.Material.Filled.AccountCircle,
     };
 }

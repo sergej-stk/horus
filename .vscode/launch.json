@@ -6,7 +6,8 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "src/bin/Debug/net8.0/Horus.dll",
+            "program": "${workspaceFolder}/src/bin/Debug/net8.0/Horus.dll",
+            "cwd": "${workspaceFolder}/src",
             "args": [],
             "stopAtEntry": false,
             "serverReadyAction": {
@@ -14,9 +15,10 @@
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5010"
             },
-            "console": "integratedTerminal"
-        }
+            "console": "integratedTerminal",
+        }   
     ]
 }

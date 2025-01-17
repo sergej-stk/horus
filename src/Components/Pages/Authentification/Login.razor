@@ -1,0 +1,22 @@
+@page "/pages/auth/login"
+
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Web
+@using MudBlazor
+
+@inject ILogger<Login> Logger
+
+<PageTitle>@_title</PageTitle>
+
+<MudGrid>
+    <MudItem xs="12" sm="12" md="12" lg="12">
+        <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
+            <h1>Hi</h1>
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+@code {
+    private string _title = "Sign In";
+    public static string url = "/pages/auth/login";
+}

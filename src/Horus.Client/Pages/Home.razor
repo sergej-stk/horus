@@ -6,7 +6,7 @@
 <MudText Class="mb-8">This component demonstrates fetching data from the server.</MudText>
 
 <MudGrid>
-    <MudItem xs="12" sm="6">
+    <MudItem xs="12" sm="12" md="6" lg="6">
         <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
             @if (forecasts == null)
             {
@@ -47,17 +47,14 @@
         </MudPaper>
     </MudItem>
 
-    <MudItem xs="12" sm="6">
-        <MudPaper Class="d-flex align-center justify-center mud-width-full py-8">
-            <MudPaper Class="pa-4">
-                <MudChart ChartType="ChartType.Donut" @bind-SelectedIndex="Index"
-                    InputData="@data" InputLabels="@labels"></MudChart>
-            </MudPaper>
-            <MudPaper Class="pa-4 mt-2 d-flex justify-center">
-                <MudButton OnClick="AddDataSize" Variant="Variant.Filled" Color="Color.Primary">Add</MudButton>
-                <MudButton @onclick="RandomizeData" Variant="Variant.Filled" Class="mx-4">Randomize</MudButton>
-                <MudButton OnClick="RemoveDataSize" Variant="Variant.Filled" Color="Color.Secondary">Remove</MudButton>
-            </MudPaper>
+    <MudItem xs="12" sm="12" md="6" lg="6">
+        <MudPaper Class="d-flex align-center justify-center mud-width-full py-8 pa-8">
+            <MudChart ChartType="ChartType.Donut" @bind-SelectedIndex="Index" InputData="@data" InputLabels="@labels">
+            </MudChart>
+
+            <MudButton OnClick="AddDataSize" Variant="Variant.Filled" Color="Color.Primary">Add</MudButton>
+            <MudButton @onclick="RandomizeData" Variant="Variant.Filled" Class="mx-4">Randomize</MudButton>
+            <MudButton OnClick="RemoveDataSize" Variant="Variant.Filled" Color="Color.Secondary">Remove</MudButton>
         </MudPaper>
     </MudItem>
 </MudGrid>

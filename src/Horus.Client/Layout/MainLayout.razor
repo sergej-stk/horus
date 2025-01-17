@@ -8,10 +8,10 @@
     <MudAppBar Elevation="0">
         <MudIconButton Icon="@(DrawerButtonIcon)" Color="Color.Inherit" Edge="Edge.Start"
             OnClick="@((e) => DrawerToggle())" />
-        <MudSpacer />
         <MudText Typo="Typo.h5" Class="ml-3">
             Horus
-        </MudText>
+        </MudText>             
+        <MudImage Src="logo.png" Height="40" Width="40" />                   
         <MudSpacer />
         <MudIconButton Icon="@(DarkLightModeButtonIcon)" Color="Color.Inherit" OnClick="@DarkModeToggle" />
         <MudIconButton Icon="@(AccountButtonIcon)" Color="Color.Inherit" Edge="Edge.End" />
@@ -32,6 +32,7 @@
 </div>
 
 @code {
+    public string Search { get; set;} = string.Empty;
     private bool _drawerOpen = true;
     private bool _isDarkMode = true;
     private bool _isUserLoggedIn = true;

@@ -1,7 +1,5 @@
 <br>
 
-![Linebreak](/assets/line.png)
-
 <div align="center">
     <a 
         href="https://github.com/sergej-stk/horus"
@@ -32,5 +30,3 @@
 
 ### Author
 - [sergej-stk](https://github.com/sergej-stk)
-
-![Linebreak](/assets/line.png)

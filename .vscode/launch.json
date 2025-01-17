@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "src/Horus/bin/Debug/net8.0/Horus.dll",
+            "program": "src/bin/Debug/net8.0/Horus.dll",
             "args": [],
             "stopAtEntry": false,
             "serverReadyAction": {
@@ -16,9 +16,7 @@
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
-            "sourceFileMap": {
-                "/Views": "src/Views"
-            }
+            "console": "integratedTerminal"
         }
     ]
 }

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "src/Horus/Horus.csproj"
+                "src/Horus.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -17,11 +17,11 @@
             "type": "process",
             "args": [
                 "publish",
-                "src/Horus/Horus.csproj",
+                "src/Horus.csproj",
                 "--configuration",
                 "Release",
                 "--output",
-                "src/Horus/bin/Release/net7.0/publish"
+                "src/bin/Release/net7.0/publish"
             ],
             "problemMatcher": []
         }

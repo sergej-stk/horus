@@ -8,8 +8,6 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Horus.Client\Horus.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.*" />
+    <PackageReference Include="MudBlazor" Version="7.*" />
   </ItemGroup>
-
 </Project>

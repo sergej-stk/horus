@@ -17,3 +17,4 @@ public partial class User
 
     public DateTime? UpdatedAt { get; set; }
 }
+// Compare this snippet from src/Components/Shared/NavMenu.razor:

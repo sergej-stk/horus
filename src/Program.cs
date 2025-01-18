@@ -1,8 +1,8 @@
 using MudBlazor.Services;
 using Horus.Components;
 using Serilog;
-using Horus;
 using Microsoft.EntityFrameworkCore;
+using Horus.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

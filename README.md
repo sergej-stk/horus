@@ -28,5 +28,8 @@
 
 **Horus** is a lightweight tool designed for managing tickets and employee data. Inspired by Horus, the Egyptian god of the sky and protector.
 
+### Ressources
+ dotnet ef dbcontext scaffold "Host=localhost;Database=horus;Username=postgres;Password=postgres" Npgsql.EntityFrameworkCore.PostgreSQL --output-dir Models --context-dir Data --context AppDBContext
+
 ### Author
 - [sergej-stk](https://github.com/sergej-stk)

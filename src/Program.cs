@@ -1,6 +1,8 @@
 using MudBlazor.Services;
 using Horus.Components;
 using Serilog;
+using Horus;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,9 @@ Log.Logger = new LoggerConfiguration()
 try
 {
     builder.Services.AddSerilog();
+    builder.Services.AddDbContext<AppDBContext>(options =>
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
     builder.Services.AddMudServices();
     builder.Services.AddRazorComponents()
         .AddInteractiveServerComponents();
